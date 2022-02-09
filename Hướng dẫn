@@ -48,6 +48,45 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: 'blue',
 }));
 
+2. Style CSS :
+
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: 'red',
+  backgroundColor: 'blue',
+}));
+
+const ItemA = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: 'red',
+  backgroundColor: 'green',
+}));
+
+export default function BasicGrid() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={2}>
+          <Item>xs=8</Item>
+        </Grid>
+        <Grid item xs={4}>
+          <Item>xs=4</Item>
+        </Grid>
+        <Grid item xs={4}>
+          <Item>xs=4</Item>
+        </Grid>
+        <Grid item xs={8}>
+          <ItemA>xs=8</ItemA>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}
+
 II. Default breakpoints
 https://mui.com/customization/breakpoints/#default-breakpoints
 - Default breakpoints
