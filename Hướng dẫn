@@ -39,6 +39,14 @@ export default function BasicGrid() {
 - Grid container  như row
 - Grid item như column.
 
+1. backgroundColor: 'blue',  ---> sử dụng camel case
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+  backgroundColor: 'blue',
+}));
 
 II. Default breakpoints
 https://mui.com/customization/breakpoints/#default-breakpoints
