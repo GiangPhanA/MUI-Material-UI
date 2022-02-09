@@ -38,3 +38,18 @@ export default function BasicGrid() {
 ---> sử dụng BOX như grid.
 - Grid container  như row
 - Grid item như column.
+
+
+II. Default breakpoints
+https://mui.com/customization/breakpoints/#default-breakpoints
+- Default breakpoints
+
+Each breakpoint (a key) matches with a fixed screen width (a value):
+
+    xs, extra-small: 0px
+    sm, small: 600px
+    md, medium: 900px
+    lg, large: 1200px
+    xl, extra-large: 1536px
+---> Chia thành 12 cột. <Grid item xs={8}> --> 1 hàng có số cột  <= 12
+
